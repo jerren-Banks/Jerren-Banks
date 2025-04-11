@@ -45,10 +45,29 @@ html, body {
   color: #555;
 }
 
+/* ---------- HEADER RIGHT (LinkedIn + Resume Button) ---------- */
 .header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
+/* LinkedIn SVG Icon Styling */
+.header-right svg {
+  width: 36px;
+  height: 36px;
+  fill: #0077B5;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.header-right svg:hover {
+  transform: scale(1.1);
+  fill: #0A66C2;
+}
+
+/* Resume Download Button */
 .download-btn {
   background-color: #ff6b00;
   color: #fff;
@@ -115,5 +134,11 @@ ul li {
 
   .header-right {
     margin-top: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .header-right a {
+    margin-bottom: 0.5rem;
   }
 }
