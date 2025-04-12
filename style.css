@@ -24,7 +24,7 @@ body::before {
   background-size: 80%;
   background-attachment: fixed;
   backdrop-filter: blur(6px);
-  opacity: 0.18;
+  opacity: 0.7;
   z-index: -1;
 }
 
