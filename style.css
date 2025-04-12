@@ -1,15 +1,13 @@
 /* ---------- GLOBAL RESET & BACKGROUND ---------- */
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: none;
-  background-color: #f7f7f7;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
   line-height: 1.6;
   position: relative;
-  min-height: 100vh;
-  overflow-x: hidden;
 }
 
 /* Blurred transparent background overlay */
@@ -20,11 +18,9 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('IMG_3129.png') no-repeat left 40%;
-  background-size: 80%;
-  background-attachment: fixed;
-  backdrop-filter: blur(6px);
-  opacity: 0.7;
+  background: url('IMG_3129.png') no-repeat center center/cover;
+  opacity: 0.12; /* just enough “umph” */
+  filter: blur(4px);
   z-index: -1;
 }
 
